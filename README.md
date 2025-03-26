@@ -1,7 +1,7 @@
 # 502-DesAvanAplicWeb
 
 
-## Diego Abdo Velásquez - Full Stack
+## A01783808: Diego Abdo Velásquez. (Full Stack)
 
 
 
