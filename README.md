@@ -3,7 +3,7 @@
 ## Tomas Molina Perez Diez
 ## Jefe de Base de Datos/Backend
 
-## Francisco Urquizo
+## Francisco, Urquizo Schnaas (Project Manager)
 ## Project Manager
 
 502 - Desarrollo Avanzado de Aplicaciones Web
