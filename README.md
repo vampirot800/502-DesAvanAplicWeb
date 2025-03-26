@@ -1,8 +1,6 @@
 # 502-DesAvanAplicWeb
 
-## Tomas Molina Perez Diez
-## Jefe de Base de Datos/Backend
-## Imanol Santisteban(DevOps/BackEnd)
+## Ramiro Flores Villarreal FRONTEND/FULLSTACK
 
 
 502 - Desarrollo Avanzado de Aplicaciones Web
