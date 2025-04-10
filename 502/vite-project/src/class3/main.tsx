@@ -14,8 +14,8 @@ function Class1App() {
   // Maneja el evento de login
   const handleLogin = (username: string, password: string) => {
     // Validación de credenciales con roles:
-    // - Si el usuario ingresa "admin" y "1234", se le asigna rol "admin"
-    // - Si el usuario ingresa "user" y "1234", se le asigna rol "user"
+    // Si el usuario ingresa "admin" y "1234", se le asigna rol "admin"
+    // Si ingresa "user" y "1234", se le asigna rol "user"
     if (username.trim().toLowerCase() === 'admin' && password === '1234') {
       setRole('admin');
       setIsLoggedIn(true);

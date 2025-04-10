@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import InputField from './InputField';
+import Button from './Button';
 
 interface LoginProps {
   onLogin: (username: string, password: string) => void;
@@ -26,6 +28,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       return;
     }
     onLogin(username, password);
+    alert(`Se ha enviado el formulario para el usuario: ${username}`);
   };
 
   return (
@@ -33,38 +36,23 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       <div className="login-container bg-white p-10 rounded-md shadow-md w-full max-w-lg">
         <h2 className="text-2xl font-bold mb-6 text-center">Iniciar sesión</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group mb-4">
-            <label htmlFor="username" className="block text-gray-700 mb-2">
-              Usuario
-            </label>
-            <input
-              type="text"
-              id="username"
-              placeholder="Ingresa tu usuario"
-              value={username}
-              onChange={handleUsernameChange}
-              className="w-full p-2 border rounded focus:outline-none focus:border-blue-500"
-            />
-          </div>
-          <div className="form-group mb-4">
-            <label htmlFor="password" className="block text-gray-700 mb-2">
-              Contraseña
-            </label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Ingresa tu contraseña"
-              value={password}
-              onChange={handlePasswordChange}
-              className="w-full p-2 border rounded focus:outline-none focus:border-blue-500"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-200"
-          >
-            Iniciar sesión
-          </button>
+          <InputField
+            label="Usuario"
+            name="username"
+            type="text"
+            placeholder="Ingresa tu usuario"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+          <InputField
+            label="Contraseña"
+            name="password"
+            type="password"
+            placeholder="Ingresa tu contraseña"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <Button type="submit" text="Iniciar sesión" />
         </form>
       </div>
     </div>
